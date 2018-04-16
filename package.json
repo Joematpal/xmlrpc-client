@@ -1,6 +1,6 @@
 {
   "name": "xmlrpc-client",
-  "version": "0.0.21",
+  "version": "0.1.0",
   "description": "",
   "main": "build/index.js",
   "scripts": {
