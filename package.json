@@ -1,6 +1,6 @@
 {
   "name": "xmlrpc-client",
-  "version": "0.0.1",
+  "version": "0.0.21",
   "description": "",
   "main": "build/index.js",
   "scripts": {
@@ -10,7 +10,8 @@
     "build:watch": "babel lib -w -d ./build",
     "build:webpack": "webpack",
     "test": "mocha --require babel-register 'test/*.test.js'",
-    "lint": "babel-eslint"
+    "lint": "babel-eslint",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -28,12 +29,15 @@
     "babel-eslint": "^8.2.2",
     "babel-plugin-proxy": "^1.1.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-register": "^6.26.0",
     "chai": "^4.1.2",
+    "dotenv": "^5.0.1",
     "eslint": "^4.19.1",
     "eslint-config-google": "^0.9.1",
     "mocha": "^5.0.5",
+    "nock": "^9.2.5",
     "standard": "^11.0.1"
   },
   "dependencies": {}
