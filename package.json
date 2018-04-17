@@ -1,6 +1,6 @@
 {
   "name": "xmlrpc-client",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
   "main": "build/index.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "build:webpack": "webpack",
     "test": "mocha --require babel-register 'test/*.test.js'",
     "lint": "babel-eslint",
-    "prepublish": "npm run build"
+    "prepublish": "npm run test && npm run build"
   },
   "repository": {
     "type": "git",
