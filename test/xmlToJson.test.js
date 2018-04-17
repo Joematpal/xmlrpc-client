@@ -1,11 +1,11 @@
 const {expect} = require('chai')
-const {xmlToJs} = require('../build/xmlToJs')
+const {xmlToJson} = require('../build/xmlToJson')
 const {xmlStruct, jsonStruct} = require('./lib')
 
-describe('xmlToJS', () => {
+describe('xmlToJson', () => {
   it('should find the proper xml data type from JavaScript', () => {
     expect(
-      xmlToJs(xmlStruct)
+      xmlToJson(xmlStruct)
     ).to.equal(jsonStruct)
   })
 })
