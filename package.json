@@ -11,7 +11,7 @@
     "build:webpack": "webpack",
     "test": "mocha --require babel-register 'test/*.test.js'",
     "lint": "babel-eslint",
-    "prepublish": "npm run test && npm run build"
+    "prepare": "npm run test && npm run build"
   },
   "repository": {
     "type": "git",
